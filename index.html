@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Encuentra en Perruqueria Tot Cabell el estilo que mejor se adapta a tus gustos. Joan Bauçà, peluquero profesional con gran experiencia en todo tipo de cortes de pelo.">
+    <title>Perruqueria Tot Cabell</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <main>
+
+        <!------------------------------ Página 1 ------------------------------>
+        <!-- En esta página encontraremos el video de presentación de la web como fondo y el "nav" fijo al top de la web y nos segirá durante todo el scroll que hagamos. -->
+
+        <div class="page1">
+
+            <!------------------------------ Navegador ------------------------------>
+
+            <nav>
+                <ul class="menu">
+                    <li class="logo">
+                        <a class="textoNegro" href="#">
+                            <div><span class="nombreEmpresa">PERRUQUERIA</span><span id="totCabell">TOT CABELL</span></div>
+                        </a>
+                    </li>
+                    <li class="item"><a class="textoNegro" href="#">Inicio</a></li>
+                    <li class="item"><a class="textoGris" href="#elPeluquero">El Peluquero</a></li>
+                    <li class="item"><a class="textoGris" href="#servicios">Servicios</a></li>
+                    <li class="item"><a class="textoGris" href="#ubicación">Localización y reservas</a></li>
+
+                    <!-- Por defecto este div permanece oculto mientras no se active la "@media" establecida en el CSS -->
+                    <!-- Este div contiene el botón dropdown que se visualizará en el móvil -->
+                    <div class="menuDrop invisible">
+                        <button class="botonMenu">
+                            <div class="lineasParalelas"></div>
+                        </button>
+                        <div class="opcionesMenu">
+                            <a class="textoNegro" href="#">Inicio</a>
+                            <a class="textoGris" href="#elPeluquero">El Peluquero</a>
+                            <a class="textoGris" href="#servicios">Servicios</a>
+                            <a class="textoGris" href="#ubicación">Localización y reservas</a>
+                            <!-- La opción "Contacto" no se ve en resoluciones inferiores a 1024px -->
+                            <a class="textoGris invisibleMovil" href="#contacto">Contacto</a>
+                        </div>
+
+                    </div>
+                    <!-- Este "button" simplemente es para poder tener centrado el logo del nav mediante "space-between" y "order"-->
+                    <button class="botonMenu2 invisible">
+                        <div class="lineasParalelas"></div>
+                    </button>
+                </ul>
+            </nav>
+
+            <!------------------------------ FIN Navegador ------------------------->
+
+            <!-- El vídeo -->
+            <video id="video_background" autoplay muted loop id="video3">
+                <source src="videos/video3.mp4" class="videoHorizontal" type="video/mp4" width="100%">
+            </video>
+        </div>
+
+        <!------------------------------ FIN Página 1 -------------------------->
+
+
+        <!------------------------------ Página 2 ------------------------------>
+        <!-- En esta página tenemos una fotografía de fondo, una fotografía del peluquero a la izquierda y una descripción del mismo y texto adicional a la derecha. Foto y texto centrados horizontalmente. -->
+
+        <div id="elPeluquero" class="page2">
+
+            <figure class="fotoPeluquero">
+                <img src="imagenes/peluquero.jpg" alt="">
+            </figure>
+
+            <article class="textoPeluquero">
+                <header>
+                    <h2>Joan Bauçà Morey</h2>
+                </header>
+                <br>
+                <hr><br>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vel rerum quibusdam harum necessitatibus nostrum molestias, totam earum quo excepturi consectetur nobis corrupti minima, est repellat, ad dolores sapiente perferendis!</span>
+                    <span>Totam, soluta nisi. Magnam aut enim ad itaque! Similique tenetur, omnis dicta saepe accusamus consectetur laborum maxime odit adipisci eos inventore amet iste delectus repellat et illum exercitationem libero dolor.</span>
+                    <span>Molestias aliquid ratione, excepturi dolore doloribus et fuga illo alias, inventore necessitatibus dolorum, iste repellendus consequuntur minima. Consectetur possimus obcaecati architecto non soluta animi autem nisi sit repellendus, eaque! Quidem.</span>
+                    <span>Maxime fugiat qui voluptatum et ipsam a maiores, molestiae soluta obcaecati reiciendis fuga quae doloribus neque possimus provident sed, expedita, iure eum unde atque dignissimos dicta quod eaque. Deleniti, modi.</span>
+                    <span>Repellat in ipsa autem quasi perferendis, nam quaerat fugiat, nulla culpa libero laudantium dolorem explicabo. Suscipit error eius fuga, beatae iure nulla aliquid qui ipsum eveniet perspiciatis voluptas facere? Sequi!</span>
+                    <span>Quaerat esse fugiat repudiandae doloribus, repellat necessitatibus provident autem nihil laudantium animi aut reprehenderit, voluptatibus facilis molestias blanditiis soluta voluptate voluptates voluptatum temporibus maiores laborum in maxime et rem. Eveniet.</span>
+                </p>
+                <br>
+                <hr><br>
+                <footer>
+                    <span>Email: <a href="mailto:totcabellperruqeria@gmail.com">totcabellperruqeria@gmail.com</a>
+                    </span>
+                </footer>
+            </article>
+
+        </div>
+
+        <!------------------------------ FIN Página 2 -------------------------->
+
+
+        <!------------------------------ Página 3 ------------------------------>
+        <!-- Aquí veremos mediante "grid" diferentes trabajos de peluquería con imágenes y texto en sus respectivos div. El texto está en un article compuesto por header, líneas de separación y párrafo. Todo el conjunto quedará centrado en la "page3" con imagen de "background" en CSS -->
+
+        <div id="servicios" class="page3">
+
+            <div class="Area1 fondoBlanco">
+                <img src="imagenes/corte_barba.jpg" alt="Foto corte barba">
+                <article class="centrado">
+                    <header class="titulosFotos">
+                        <h2>Barba</h2>
+                    </header>
+                    <div class="lineasParalelas"></div>
+                    <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque eveniet ut quam soluta, porro cumque rem quaerat quae dolorem non delectus ex exercitationem architecto ducimus? Ab molestiae, optio blanditiis!</p>
+                </article>
+            </div>
+
+            <div class="Area2 fondoBlanco">
+                <img src="imagenes/cabello.jpg" alt="Foto corte barba">
+                <article class="centrado">
+                    <header class="titulosFotos">
+                        <h2>Cabello</h2>
+                    </header>
+                    <div class="lineasParalelas"></div>
+                    <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque eveniet ut quam soluta, porro cumque rem quaerat quae dolorem non delectus ex exercitationem architecto ducimus? Ab molestiae, optio blanditiis!</p>
+                </article>
+            </div>
+
+            <div class="Area3 fondoBlanco">
+                <img src="imagenes/lavado.jpg" alt="Foto corte barba">
+                <article class="centrado">
+                    <header class="titulosFotos">
+                        <h2>Lavado</h2>
+                    </header>
+                    <div class="lineasParalelas"></div>
+                    <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque eveniet ut quam soluta, porro cumque rem quaerat quae dolorem non delectus ex exercitationem architecto ducimus? Ab molestiae, optio blanditiis!</p>
+                </article>
+            </div>
+
+            <div class="Area4 fondoBlanco">
+                <img src="imagenes/tinte.jpg" alt="Foto corte barba">
+                <article class="centrado">
+                    <header class="titulosFotos">
+                        <h2>Tinte</h2>
+                    </header>
+                    <div class="lineasParalelas"></div>
+                    <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque eveniet ut quam soluta, porro cumque rem quaerat quae dolorem non delectus ex exercitationem architecto ducimus? Ab molestiae, optio blanditiis!</p>
+                </article>
+            </div>
+
+            <div class="Area5 fondoBlanco">
+                <img src="imagenes/afeitado.jpg" alt="Foto corte barba">
+                <article class="centrado">
+                    <header class="titulosFotos">
+                        <h2>Rasurado</h2>
+                    </header>
+                    <div class="lineasParalelas"></div>
+                    <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque eveniet ut quam soluta, porro cumque rem quaerat quae dolorem non delectus ex exercitationem architecto ducimus? Ab molestiae, optio blanditiis!</p>
+                </article>
+            </div>
+
+            <div class="Area6 fondoBlanco">
+                <img src="imagenes/estilo.jpg" alt="Foto corte barba">
+                <article class="centrado">
+                    <header class="titulosFotos">
+                        <h2>Estilizado</h2>
+                    </header>
+                    <div class="lineasParalelas"></div>
+                    <p class="centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque eveniet ut quam soluta, porro cumque rem quaerat quae dolorem non delectus ex exercitationem architecto ducimus? Ab molestiae, optio blanditiis!</p>
+                </article>
+            </div>
+
+        </div>
+
+        <!------------------------------ FIN Página 3 -------------------------->
+
+
+        <!------------------------------ Página 4 ------------------------------>
+        <!-- En esta página tendremos el horario y la ubicación de la peluquería mediante un "grid" de dos columnas, ambos contendrán "articles" con sus títulos, texto y en el caso del de la ubicación, el mapa. El contenido va centrado en la "page4" con imagen "background" desde CSS -->
+
+        <div id="ubicación" class="page4">
+            <div class="zona1 textoBlanco">
+                <article class="centrado">
+                    <h2>HORARIO</h2>
+                    <br>
+                    <p>
+                        <strong>Lunes, miércoles y viernes</strong>
+                        <br>
+                        9:00 - 13:30 h
+                        <br>
+                        16:00 - 19:00 h
+                        <br>
+                        <br>
+                        <strong>Martes y jueves</strong>
+                        <br>
+                        9:00 - 13:00 h
+                        <br>
+                        15:30 - 18:00 h
+                        <br>
+                        <br>
+                        <strong>Sábados y domingos cerrado</strong>
+                        <br>
+                        <br>
+                    </p>
+                    <div class="lineasParalelas2"></div>
+                    <br>
+                    <h2>RESERVAS</h2>
+                    <br>
+                    <p>
+                        Puedes llamar al <a href="tel:+349714558"><strong>971 714 558</strong></a>
+                    </p>
+
+                    o mandar un <a href="http://api.whatsapp.com/send?phone=34618271303" target="_blank"><strong>WhatsApp</strong></a>
+                    <br>
+                    <br>
+                    <a href="mailto:test@gmail.com?subject=Tengo una pregunta&body=Escribe aquí si tienes preguntas ">Preguntas por email aquí </a>
+                </article>
+
+                <ul class="legal">
+                    <li>
+                        <a href="legal.html">Legal</a>
+                    </li>
+                    <li>
+                        <a href="cookies.html">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="privacidad.html">Privacidad</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="zona1 textoBlanco">
+                <article class="centrado">
+                    <header>
+                        <h2>UBICACIÓN</h2>
+                    </header>
+                    <br>
+                    <p>Francesc de Borja Moll 6, 07003 Palma de Mallorca</p>
+                    Cómo llegar con <a href="https://g.page/totcabellperruqueria?share" target="_blank"><strong>Google Maps</strong></a>
+                    <br>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12301.160543261607!2d2.642531769775397!3d39.575611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979256d6151aa3%3A0x309765fa7a856441!2sTot%20Cabell!5e0!3m2!1ses!2ses!4v1609834977102!5m2!1ses!2ses" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </article>
+
+            </div>
+
+        </div>
+
+        <!------------------------------ FIN Página 4 ------------------------------>
+
+
+        <div class="page5">
+            <footer>
+                <ul class="webFooter">
+                    <li>
+                        <a href="legal.html">Legal</a>
+                    </li>
+                    <li>
+                        <a href="cookies.html">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="privacidad.html">Privacidad</a>
+                    </li>
+                </ul>
+
+            </footer>
+        </div>
+
+    </main>
+</body></html>

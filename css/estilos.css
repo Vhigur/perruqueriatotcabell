@@ -1,0 +1,769 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*** ESTILOS GLOBALES ***/
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+figure > img {
+    display: block;
+    width: 100%;
+}
+
+.invisible {
+    display: none;
+}
+
+.centrado {
+    text-align: center;
+}
+
+/* FIN estilos globales */
+
+/*** CARACTERÍSTICAS comunes de las páginas ***/
+.page1,
+.page2,
+.page3,
+.page4,
+.page5 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* FIN Caracterísitcas comunes de las páginas */
+
+/*** FONDO de cada página de forma individual ***/
+
+/* fondo página1*/
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    background-attachment: fixed;
+
+}
+
+/*fin fondo página 1*/
+
+.page2 {
+    background-image: url(imagenes/fondoTijeras.jpg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    z-index: -1000;
+    top: 100vh;
+}
+
+.page3 {
+    background-image: url(imagenes/img2.jpg);
+    top: 200vh;
+    z-index: -1000;
+    background-attachment: fixed;
+
+}
+
+.page4 {
+    background-image: url(imagenes/img3.jpg);
+    top: 300vh;
+    z-index: -1000;
+}
+
+/* FIN Fondo de cada página de forma individual */
+
+/*************** ESTILOS ESPECÍFICOS ***************/
+
+/****** PÁGINA 1 ******/
+/* NAV */
+.menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 0 3px 3px #1a1a1a;
+}
+
+/* lista de enlaces */
+
+/* nombre de empresa y logo */
+.logo {
+    margin: 10px 30px 0 0;
+
+}
+
+#totCabell {
+    font-family: Comic Sans MS, Comic Sans;
+    font-size: 200%;
+
+}
+
+.nombreEmpresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* resto de enlaces */
+.menu.item {
+    float: right;
+
+}
+
+.item {
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.item:hover {
+    background-color: #919191;
+    color: white;
+}
+
+.item a:hover {
+    color: white;
+}
+
+.textoNegro {
+    color: black;
+}
+
+.textoGris {
+    color: #696969;
+}
+
+/* Fin de Nav */
+/* FIN de Página 1 */
+
+/****** PÁGINA 2 ******/
+
+.page2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: left;
+}
+
+.fotoPeluquero {
+    width: 400px;
+}
+
+.fotoPeluquero > img {
+    border-radius: 10px;
+    margin-top: 25px;
+
+}
+
+.textoPeluquero {
+    width: 400px;
+}
+
+.textoPeluquero footer {
+    margin-bottom: 20px;
+}
+
+span > a {
+    color: black;
+}
+
+/* FIN de Página 2 */
+
+/****** PÁGINA 3 ******/
+
+.page3 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    grid-template-areas:
+        "Area1 Area2 Area3"
+        "Area4 Area5 Area6";
+    padding: 2% 10%;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.titulosFotos {
+    margin-top: 5px;
+    color: #2c2c2c;
+
+}
+
+.lineasParalelas {
+    width: 15%;
+    color: #2c2c2c;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    padding: 3px;
+    margin: 5px auto;
+
+}
+
+.fondoBlanco {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 7%;
+    overflow: hidden;
+    border-radius: 5px;
+    /*max-width: 90%;*/
+    align-items: center;
+}
+
+.fondoBlanco > img {
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+/* FIN de Página 3 */
+
+/****** PÁGINA 4 ******/
+.page4 {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 70%;
+    grid-gap: 5%;
+    grid-template-areas:
+        "zona1 zona2";
+    padding: 2% 5%;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.textoBlanco {
+    color: white;
+    padding: 5%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.textoBlanco a {
+    text-decoration: underline;
+}
+
+.centrado iframe {
+    border-radius: 10px;
+
+}
+
+.zona1 a {
+    color: white;
+}
+
+.lineasParalelas2 {
+    width: 15%;
+    color: #2c2c2c;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+    padding: 4px;
+    margin: 15px auto;
+
+}
+
+/* Políticas legales */
+.legal {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    margin-top: 40px;
+    
+}
+
+.legal li {
+    padding: 0 5px;
+}
+
+.legal li a {
+    text-decoration: none;
+}
+
+/* FIN Página 4 */
+
+
+
+
+
+
+/********************** @media **********************/
+
+
+
+/*** ESTOS ESTILOS SOLO SE APLICAN CUANDO EL TAMAÑO DEL VISOR ES MENOR DE 720px ***/
+@media screen and (min-width : 0px) and (max-width : 720px) {
+
+    .page1 {
+        height: 50px;
+
+    }
+
+    .page2 {
+        top: 100vh;
+    }
+
+    .page3 {
+        top: 350vh;
+    }
+
+    .page4 {
+        top: 800vh;
+    }
+
+    .page5 {
+        display: none;
+    }
+
+    .page2,
+    .page3,
+    .page4,
+    .page5 {
+        height: auto;
+        position: inherit;
+    }
+
+    /**** PÁGINA 1 ****/
+    #video_background {
+        display: none;
+    }
+
+    /*** Menú Dropdown ***/
+    /* Estilos del botón menu */
+
+    /* El menú aparece a la izquierda */
+    .menu {
+        width: 100%;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.93);
+        box-shadow: none;
+
+    }
+
+    /* Hago visible el menú dropdown visualizando la div que contiene su definición en el html */
+    .invisible {
+        display: block;
+    }
+
+    /* Ocultamos los elementos li de la barra de navegación de la página 1 */
+    .page1 .item {
+        display: none;
+    }
+
+    /* Propiedades del botón que muestra del menú "dropdown"*/
+    .botonMenu {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        margin-left: 5px;
+        font-size: 1rem;
+        padding: 0 10px;
+        border: none;
+        cursor: pointer;
+        order: 1;
+        height: 100%;
+    }
+
+    /* Este simplemente es para poder tener centrado el logo del nav mediante "space-between" y "order" */
+    .botonMenu2 {
+        visibility: hidden;
+        margin-right: 10px;
+        padding: 0 10px;
+        order: 2;
+    }
+
+    /* Contenedor de opciones del botón menú (por defecto ocultas) */
+    .opcionesMenu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        text-align: left;
+        min-width: 10rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+
+    }
+
+    /* Opciones del menú "dropdown" */
+    .opcionesMenu a {
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Cambia el color de los links al pasar sobre ellos */
+    .opcionesMenu a:hover {
+        background-color: gray;
+    }
+
+    /* Muestra el menú "dropdown" al pasar por el boton*/
+    .menuDrop:hover .opcionesMenu {
+        display: block;
+    }
+
+    /*** FIN menú "dropdown" ***/
+
+    /* nombre de empresa y logo */
+    .logo {
+        margin: 5px 5px 0 0;
+        order: 2;
+
+    }
+
+    #totCabell {
+        font-family: Comic Sans MS, Comic Sans;
+        font-size: 150%;
+
+    }
+
+    .nombreEmpresa {
+        font-size: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /**** FIN Página 1 ****/
+
+    /**** PÁGINA 2 ****/
+    .page2 {
+        background-image: none;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .fotoPeluquero {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .fotoPeluquero > img {
+        border-radius: 0;
+    }
+
+    .textoPeluquero {
+        width: 98%;
+        overflow: hidden;
+        min-height: inherit;
+    }
+
+    .textoPeluquero header {
+        text-align: center;
+    }
+
+    .textoPeluquero {
+        background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(imagenes/fondoTijeras.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    /**** FIN Página 2 ****/
+
+    /**** PÁGINA 3 ****/
+    .page3 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas:
+            "Area1"
+            "Area2"
+            "Area3"
+            "Area4"
+            "Area5"
+            "Area6";
+        padding: auto;
+        align-content: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+
+    /**** PÁGINA 4 ****/
+    .page4 {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 1%;
+        grid-template-areas:
+            "zona1"
+            "zona1";
+        padding-bottom: 20px;
+    }
+
+    .centrado iframe {
+        height: 150px;
+    }
+
+    /**** FIN página 4 ****/
+}
+
+/**** FIN página 3 ****/
+
+
+
+
+
+
+
+/*** ESTOS ESTILOS SOLO SE APLICAN CUANDO EL TAMAÑO DEL VISOR ESTÁ ENTRE 721px Y 1023px ***/
+@media screen and (min-width : 721px) and (max-width : 1023px) {
+    .page1 {
+        height: 50px;
+
+    }
+
+    .page2 {
+        top: 100vh;
+    }
+
+    .page3 {
+        top: 350vh;
+    }
+
+    .page4 {
+        top: 800vh;
+    }
+
+    .page5 {
+        display: none;
+    }
+
+    .page2,
+    .page3,
+    .page4,
+    .page5 {
+        height: auto;
+        position: inherit;
+    }
+
+    /**** PÁGINA 1 ****/
+    #video_background {
+        display: none;
+    }
+
+    /*** Menú Dropdown ***/
+    /* Estilos del botón menu */
+
+    /* El menú aparece a la izquierda */
+    .menu {
+        width: 100%;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.93);
+        box-shadow: none;
+
+    }
+
+    /* Hago visible el menú dropdown visualizando la div que contiene su definición en el html */
+    .invisible {
+        display: block;
+    }
+
+    /* Ocultamos los elementos li de la barra de navegación de la página 1 */
+    .page1 .item {
+        display: none;
+    }
+
+    /* Propiedades del botón que muestra del menú "dropdown"*/
+    .botonMenu {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        margin-left: 5px;
+        font-size: 1rem;
+        padding: 0 10px;
+        border: none;
+        cursor: pointer;
+        order: 1;
+        height: 100%;
+    }
+
+    /* Este simplemente es para poder tener centrado el logo del nav mediante "space-between" y "order" */
+    .botonMenu2 {
+        visibility: hidden;
+        margin-right: 10px;
+        padding: 0 10px;
+        order: 2;
+    }
+
+    /* Contenedor de opciones del botón menú (por defecto ocultas) */
+    .opcionesMenu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        text-align: left;
+        min-width: 10rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+
+    }
+
+    /* Opciones del menú "dropdown" */
+    .opcionesMenu a {
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Cambia el color de los links al pasar sobre ellos */
+    .opcionesMenu a:hover {
+        background-color: gray;
+    }
+
+    /* Muestra el menú "dropdown" al pasar por el boton*/
+    .menuDrop:hover .opcionesMenu {
+        display: block;
+    }
+
+    /*** FIN menú "dropdown" ***/
+
+    /* nombre de empresa y logo */
+    .logo {
+        margin: 5px 5px 0 0;
+        order: 2;
+
+    }
+
+    #totCabell {
+        font-family: Comic Sans MS, Comic Sans;
+        font-size: 150%;
+
+    }
+
+    .nombreEmpresa {
+        font-size: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /**** FIN Página 1 ****/
+
+    /**** PÁGINA 2 ****/
+    .page2 {
+        background-image: none;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .fotoPeluquero {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .fotoPeluquero > img {
+        border-radius: 0;
+    }
+
+    .textoPeluquero {
+        width: 98%;
+        overflow: hidden;
+        min-height: inherit;
+    }
+
+    .textoPeluquero header {
+        text-align: center;
+    }
+
+    .textoPeluquero {
+        background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(imagenes/fondoTijeras.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    /**** FIN Página 2 ****/
+
+
+    /**** PÁGINA 3 ****/
+    .page3 {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 2%;
+        grid-template-areas:
+            "Area1 Area2"
+            "Area3 Area4"
+            "Area5 Area6";
+        padding-bottom: 10%;
+        align-content: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /*.fondoBlanco p {
+        display: none;
+    }
+    
+    .fondoBlanco .lineasParalelas {
+        display: none;
+    }*/
+
+    /**** FIN página 3 ****/
+
+    /**** PÁGINA 4 ****/
+    .page4 {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 1%;
+        grid-template-areas:
+            "zona1"
+            "zona1";
+        padding-bottom: 20px;
+    }
+
+    .centrado iframe {
+        height: 150px;
+
+    }
+
+    /**** FIN página 4 ****/
+}
+
+
+
+
+
+
+/*** ESTOS ESTILOS SOLO SE APLICAN CUANDO EL TAMAÑO DEL VISOR ESTÁ ENTRE 1024px Y 1400px ***/
+@media screen and (min-width : 1024px) and (max-width : 1400px) {
+
+    /**** PÁGINA 3 ****/
+    .page3 {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 2%;
+        grid-template-areas:
+            "Area1 Area2 Area3"
+            "Area4 Area5 Area6";
+        padding: 2% 10%;
+        align-content: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /**** FIN página 3 ****/
+
+}
